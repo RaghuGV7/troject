@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Owin.Hosting;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,10 @@ namespace Trogsoft.Project.Server.Cmd
     {
         static void Main(string[] args)
         {
+            using (WebApp.Start<Startup>("http://+:16119"))
+            {
+                Console.ReadLine();
+            }
         }
     }
 }

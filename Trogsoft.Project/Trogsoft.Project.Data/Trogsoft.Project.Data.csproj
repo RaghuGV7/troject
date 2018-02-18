@@ -30,8 +30,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BCrypt.Net, Version=0.1.5073.29922, Culture=neutral, PublicKeyToken=6bcd409ee6bc9292, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt-Official.0.1.109\lib\BCrypt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,7 +52,85 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiKey.cs" />
+    <Compile Include="AuthModule.cs" />
+    <Compile Include="Content.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="Iteration.cs" />
+    <Compile Include="Migrations\201802181308047_InitialDeploy.cs" />
+    <Compile Include="Migrations\201802181308047_InitialDeploy.Designer.cs">
+      <DependentUpon>201802181308047_InitialDeploy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802181314319_AuthModule_Defaults.cs" />
+    <Compile Include="Migrations\201802181314319_AuthModule_Defaults.Designer.cs">
+      <DependentUpon>201802181314319_AuthModule_Defaults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802181323487_SeedOnly.cs" />
+    <Compile Include="Migrations\201802181323487_SeedOnly.Designer.cs">
+      <DependentUpon>201802181323487_SeedOnly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802181431525_User_ModuleContext.cs" />
+    <Compile Include="Migrations\201802181431525_User_ModuleContext.Designer.cs">
+      <DependentUpon>201802181431525_User_ModuleContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802181505128_AuthModuleOrdinal.cs" />
+    <Compile Include="Migrations\201802181505128_AuthModuleOrdinal.Designer.cs">
+      <DependentUpon>201802181505128_AuthModuleOrdinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802181610152_PasswordNotRequired.cs" />
+    <Compile Include="Migrations\201802181610152_PasswordNotRequired.Designer.cs">
+      <DependentUpon>201802181610152_PasswordNotRequired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802181625522_UserNameDetails.cs" />
+    <Compile Include="Migrations\201802181625522_UserNameDetails.Designer.cs">
+      <DependentUpon>201802181625522_UserNameDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Organisation.cs" />
+    <Compile Include="Priority.cs" />
+    <Compile Include="Privilege.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="ProjectEntities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setting.cs" />
+    <Compile Include="Status.cs" />
+    <Compile Include="Tag.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="Timing.cs" />
+    <Compile Include="User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201802181308047_InitialDeploy.resx">
+      <DependentUpon>201802181308047_InitialDeploy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802181314319_AuthModule_Defaults.resx">
+      <DependentUpon>201802181314319_AuthModule_Defaults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802181323487_SeedOnly.resx">
+      <DependentUpon>201802181323487_SeedOnly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802181431525_User_ModuleContext.resx">
+      <DependentUpon>201802181431525_User_ModuleContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802181505128_AuthModuleOrdinal.resx">
+      <DependentUpon>201802181505128_AuthModuleOrdinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802181610152_PasswordNotRequired.resx">
+      <DependentUpon>201802181610152_PasswordNotRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802181625522_UserNameDetails.resx">
+      <DependentUpon>201802181625522_UserNameDetails.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LICENSE.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

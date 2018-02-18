@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trogsoft.Project.Common", "Trogsoft.Project.Common\Trogsoft.Project.Common.csproj", "{2F35FA8F-17A2-421D-AEF7-CBC9B2C26186}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trogsoft.Project.Server.Cmd", "Trogsoft.Project.Server.Cmd\Trogsoft.Project.Server.Cmd.csproj", "{7CD3CD57-B7C0-4385-95C4-FC9D4904F4EC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trogsoft.Project.Data", "Trogsoft.Project.Data\Trogsoft.Project.Data.csproj", "{AD21697E-0825-4880-9958-4EB7B6433DC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trogsoft.Project.Web", "Trogsoft.Project.Web\Trogsoft.Project.Web.csproj", "{69889368-FD55-46E0-824A-6C91CBC27140}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trogsoft.Project.Server.Common", "Trogsoft.Project.Server.Common\Trogsoft.Project.Server.Common.csproj", "{307B87A4-7690-4EED-B5BD-936BED9F9B9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{AD21697E-0825-4880-9958-4EB7B6433DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD21697E-0825-4880-9958-4EB7B6433DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD21697E-0825-4880-9958-4EB7B6433DC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69889368-FD55-46E0-824A-6C91CBC27140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69889368-FD55-46E0-824A-6C91CBC27140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69889368-FD55-46E0-824A-6C91CBC27140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69889368-FD55-46E0-824A-6C91CBC27140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{307B87A4-7690-4EED-B5BD-936BED9F9B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{307B87A4-7690-4EED-B5BD-936BED9F9B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{307B87A4-7690-4EED-B5BD-936BED9F9B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{307B87A4-7690-4EED-B5BD-936BED9F9B9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
