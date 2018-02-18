@@ -85,6 +85,10 @@
     <Compile Include="Migrations\201802181625522_UserNameDetails.Designer.cs">
       <DependentUpon>201802181625522_UserNameDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802182228213_IterationMissingPK.cs" />
+    <Compile Include="Migrations\201802182228213_IterationMissingPK.Designer.cs">
+      <DependentUpon>201802182228213_IterationMissingPK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Organisation.cs" />
     <Compile Include="Priority.cs" />
@@ -127,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802181625522_UserNameDetails.resx">
       <DependentUpon>201802181625522_UserNameDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802182228213_IterationMissingPK.resx">
+      <DependentUpon>201802182228213_IterationMissingPK.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

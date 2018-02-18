@@ -15,7 +15,6 @@ namespace Trogsoft.Project.Data
             Tasks = new HashSet<Task>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public long Id { get; set; }
 
         public long? ProjectId { get; set; }
